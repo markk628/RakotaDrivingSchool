@@ -1,0 +1,59 @@
+<!-- templates/base.html -->
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <meta charset='utf-8'>
+    <title>Rakota Driving School</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/static/assets/rakotalogo.png" href="#" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="footer">
+        <div class="inner_footer">
+            <div class="footer_third">
+                <h1>Need Help?</h1>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer_third">
+                <h1>More</h1>
+                <a href="#">Something</a>
+                <a href="#">Some other thing</a>
+                <a href="#">Some other thing</a>
+                <a href="#">Some other thing</a>
+            </div>
+            <div class="footer_third">
+                <span>
+                    Rakota Driving School LLC
+                    1340 Old Chain Bridge Road
+                    Suite 100
+                    Mclean, VA 22101
+                </span>
+            </div>
+            
+        </div>
+        <ul>
+            <li><a href="https://www.dmv.virginia.gov/drivers/#manual.asp">Virginia Driver's Manual</a></li>
+        </ul>
+        <p>Rakota Driving School LLC</p>
+    </div>
+
+</body>
+</html>
